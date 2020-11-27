@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/** Подключение переменных **/
+/** подключение базовыйх настроек **/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+/** стили для блока  header **/
+/*# sourceMappingURL=style.css.map */
