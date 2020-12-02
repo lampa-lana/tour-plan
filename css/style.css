@@ -558,4 +558,24 @@ template {
     width: 99px;
   }
 }
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+  .logo {
+    width: 99px;
+    height: 13px;
+  }
+  .logo .logo__image {
+    width: 99px;
+    height: 90%;
+  }
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
+  }
+  .navbar-top {
+    padding: 28px 0 29px 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
