@@ -541,6 +541,9 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .navbar-bottom__container {
+    width: 673px;
+  }
 }
 
 @media (max-width: 767px) {
