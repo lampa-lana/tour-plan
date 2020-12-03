@@ -410,8 +410,6 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #fff;
-  margin-left: -7px;
-  margin-right: 11px;
 }
 
 .navbar-menu__link {
@@ -536,8 +534,8 @@ template {
     margin-left: 47px;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -545,28 +543,43 @@ template {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .container {
-    max-width: 570px;
+    max-width: 576px;
+    width: 92%;
   }
   .logo {
-    width: 132px;
-    height: 24px;
+    width: 99px;
   }
-  .logo .logo__image {
-    width: 132px;
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
   }
-  .navbar__search {
-    margin-left: 40px;
-    margin-right: 40px;
+  .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
   }
-  .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
-  }
-  .navbar-menu__link {
-    font-size: 12px;
-    line-height: 15px;
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
   }
 }
 

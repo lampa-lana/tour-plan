@@ -35,30 +35,37 @@
     &__search
       margin-left: 47px
     &-menu
-      padding-top: 22px
-      padding-bottom: 22px
+      padding-top: 21px
+      padding-bottom: 21px
       &__link
         font-size: 12px
         line-height: 15px
-@media (max-width: 640px)
+@media (max-width: 767px)
   .container
-    max-width: 570px
+    max-width: 576px
+    width: 92%
   .logo
-    width: 132px
-    height: 24px
-    .logo__image
-      width: 132px
+    width: 99px
   .navbar
-    &-top
-    &__search
-      margin-left: 40px
-      margin-right: 40px
-    &-menu
-      padding-top: 22px
-      padding-bottom: 22px
-      &__link
-        font-size: 12px
-        line-height: 15px
+    &__search, &-menu, &__user
+      display: none
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      margin-top: 10px
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
 @media (max-width: 576px)
   .container
     max-width: 576px
