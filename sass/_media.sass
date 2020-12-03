@@ -3,27 +3,6 @@
     max-width: 960px
 @media (max-width: 992px)
   .container
-    max-width: 760px
-  .logo
-    width: 177px
-  .navbar
-    &-top
-      padding-top: 30px
-      padding-bottom: 30px
-    &__search
-      margin-left: auto
-      max-width: 340px
-      &-menu
-        padding-top: 31px
-        padding-bottom: 31px
-        &__link
-          font-size: 14px
-          line-height: 18px
-  .search
-    &__input
-      width: 340px
-@media (max-width: 768px)
-  .container
     max-width: 700px
   .logo
     width: 132px
@@ -32,49 +11,33 @@
       width: 132px
   .navbar
     &-top
+      padding-top: 30px
+      padding-bottom: 30px
     &__search
       margin-left: 47px
+      max-width: 340px
     &-menu
-      padding-top: 21px
-      padding-bottom: 21px
+      padding-top: 19px
+      padding-bottom: 22px
       &__link
         font-size: 12px
         line-height: 15px
     &-bottom
       &__container
         width: 673px
+  .search
+    &__input
+      width: 340px
 @media (max-width: 767px)
   .container
-    max-width: 576px
+    max-width: 650px
     width: 92%
   .logo
     width: 99px
-  .navbar
-    &__search, &-menu, &__user
-      display: none
-  .menu
-    &-button
-      display: flex
-      width: 16px
-      height: 11px
-      padding: 0
-      align-items: center
-      justify-content: space-between
-      flex-direction: column
-      border: none
-      background-color: #fff
-      cursor: pointer
-      margin-top: 10px
-      &__line
-        width: 16px
-        height: 1px
-        background-color: $text-color
-@media (max-width: 576px)
-  .container
-    max-width: 576px
-    width: 92%
-  .logo
-    width: 99px
+    height: 13px
+    .logo__image
+      width: 99px
+      height: 13px
   .navbar
     &__search, &-menu, &__user
       display: none
