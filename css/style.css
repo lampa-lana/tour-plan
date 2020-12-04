@@ -515,7 +515,7 @@ template {
 
 /** стили для блока  hotel**/
 .hotel {
-  padding-top: 23px;
+  padding-top: 15px;
   padding-bottom: 70px;
 }
 
@@ -542,7 +542,7 @@ template {
 }
 
 .hotel-info__discription {
-  margin: 5px 0;
+  margin: 0;
 }
 
 .hotel-name {
@@ -588,6 +588,7 @@ template {
   background-color: #EC1F46;
   border-radius: 4px;
   color: #fff;
+  margin-top: 6px;
 }
 
 .rating__text {
@@ -595,9 +596,14 @@ template {
   line-height: 10px;
 }
 
-.rating__counter {
+.rating__counter-first {
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__counter-last {
+  font-size: 10px;
+  line-height: 13px;
 }
 
 /** подключение стилей для адаптива**/
@@ -639,6 +645,9 @@ template {
   }
   .search__input {
     width: 340px;
+  }
+  .rating {
+    margin-top: 10px;
   }
 }
 
@@ -684,9 +693,16 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .breadcrumb-list {
+    padding: 25px 0 12px 0;
+  }
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+    margin-right: 14px;
+  }
+  .hotel {
+    padding-top: 6px;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
