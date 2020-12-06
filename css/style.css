@@ -400,7 +400,7 @@ template {
 .navbar-menu {
   list-style-type: none;
   margin: 0;
-  padding: 31px 0;
+  padding: 30px 1px 31px 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,6 +419,7 @@ template {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  font-weight: bold;
 }
 
 .logo {
@@ -459,6 +460,10 @@ template {
   background-color: #EC1F46;
 }
 
+.search__icon {
+  padding-top: 2px;
+}
+
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -482,7 +487,6 @@ template {
   color: #333333;
   font-size: 14px;
   padding-top: 3px;
-  /** line-height: 18px **/
 }
 
 /** стили для блока  хлебные крошки**/
@@ -493,7 +497,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 18px 0;
+  padding: 19px 0 18px 0;
   margin: 0;
   list-style: none;
 }
@@ -504,8 +508,8 @@ template {
 }
 
 .breadcrumb-list__item:not(:last-child)::after {
-  content: '/';
-  margin-right: 4px;
+  content: ' /  ';
+  margin-right: 3px;
 }
 
 .breadcrumb-list__link {
@@ -515,8 +519,8 @@ template {
 
 /** стили для блока  hotel**/
 .hotel {
-  padding-top: 15px;
-  padding-bottom: 70px;
+  padding-top: 18px;
+  padding-bottom: 21px;
 }
 
 .hotel-info {
@@ -532,22 +536,25 @@ template {
 }
 
 .hotel-info__offer {
-  margin-left: 14px;
-  margin-top: 4px;
+  margin-left: 15px;
+  margin-top: 2px;
 }
 
 .hotel-info__name {
-  margin-top: 4px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .hotel-info__discription {
   margin: 0;
 }
 
+.hotel-info__rating {
+  margin-top: 2px;
+}
+
 .hotel-name {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 29px;
   text-transform: uppercase;
 }
 
@@ -560,16 +567,33 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1px;
 }
 
 .hotel-discription {
   font-size: 12px;
-  line-height: 15px;
+  line-height: 16px;
 }
 
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+
+.stars__star1 {
+  margin-right: 3px;
+}
+
+.stars__star2 {
+  margin-right: 2px;
+}
+
+.stars__star3 {
+  margin-right: 2px;
+}
+
+.stars__star4 {
+  margin-right: 2px;
 }
 
 .offer {
@@ -588,7 +612,7 @@ template {
   background-color: #EC1F46;
   border-radius: 4px;
   color: #fff;
-  margin-top: 6px;
+  padding: 3px 6px 6px 6px;
 }
 
 .rating__text {
@@ -599,11 +623,13 @@ template {
 .rating__counter-first {
   font-size: 14px;
   line-height: 18px;
+  font-weight: bold;
 }
 
 .rating__counter-last {
   font-size: 10px;
   line-height: 13px;
+  font-weight: bold;
 }
 
 /** подключение стилей для адаптива**/
@@ -647,14 +673,14 @@ template {
     width: 340px;
   }
   .rating {
-    margin-top: 10px;
+    margin-top: 3px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
     max-width: 650px;
-    width: 92%;
+    width: 88%;
   }
   .logo {
     width: 99px;
@@ -743,13 +769,35 @@ template {
   }
   .logo .logo__image {
     width: 99px;
-    height: 90%;
+    height: 88%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
   .navbar-top {
     padding: 28px 0 29px 0;
+  }
+  .hotel {
+    padding-top: 2px;
+    padding-bottom: 37px;
+  }
+  .hotel-name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .hotel-wrapper {
+    margin-bottom: 0;
+  }
+  .hotel-info__offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-left: 1px;
+  }
+  .stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin-right: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */

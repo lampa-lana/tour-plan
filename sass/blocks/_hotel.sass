@@ -1,31 +1,41 @@
 .hotel
-  padding-top: 15px
-  padding-bottom: 70px
+  padding-top: 18px
+  padding-bottom: 21px
   &-info
     display: flex
     align-items: center
     justify-content: space-between
     &__offer
-      margin-left: 14px
-      margin-top: 4px
+      margin-left: 15px
+      margin-top: 2px
     &__name
-      margin-top: 4px
-      margin-bottom: 0
+      margin: 0
     &__discription
       margin: 0
+    &__rating
+      margin-top: 2px
   &-name
     font-size: 24px
-    line-height: 30px
+    line-height: 29px
     text-transform: uppercase
   &-wrapper
     display: flex
     flex-wrap: wrap
     align-items: center
+    margin-bottom: 1px
   &-discription
     font-size: 12px
-    line-height: 15px
+    line-height: 16px
 .stars
   flex-basis: 100%
+  &__star1
+    margin-right: 3px
+  &__star2
+    margin-right: 2px
+  &__star3
+    margin-right: 2px
+  &__star4
+    margin-right: 2px
 .offer
   font-size: 10px
   line-height: 13px
@@ -40,13 +50,15 @@
   background-color: $primary
   border-radius: 4px
   color: $light
-  margin-top: 6px
+  padding: 3px 6px 6px 6px
   &__text
     font-size: 8px
     line-height: 10px
   &__counter-first
     font-size: 14px
     line-height: 18px
+    font-weight: bold
   &__counter-last
     font-size: 10px
     line-height: 13px
+    font-weight: bold
