@@ -1,7 +1,8 @@
 .reviews
   padding: 40px 0 70px 0
   &__title
-    margin-bottom: 77px
+    margin-top: 0
+    margin-bottom: 72px
     font-weight: bold
     font-size: 36px
     line-height: 45px
@@ -17,7 +18,7 @@
       margin: 45px auto 0
       background: #FFFFFF
       border-radius: 8px
-      padding: 0 62px 30px 62px
+      padding: 0 60px 30px 64px
       &::before
         content: ''
         position: absolute
@@ -38,7 +39,7 @@
         background-repeat: no-repeat
     &__button
       position: absolute
-      top: 50%
+      top: 46%
       transform: translateY(-50%)
       z-index: 99
       width: 30px
@@ -52,16 +53,16 @@
       background-color: transparent
       &-prev
         background-image: url(../img/arrow-prev-secondary.svg)
-        left: 0
+        left: 17px
       &-next
         background-image: url(../img/arrow-next-secondary.svg)
-        right: 0
+        right: 17px
     &__profile
       display: flex
       flex-direction: column
       align-items: center
       margin-top: -45px
-      margin-bottom: 30px
+      margin-bottom: 32px
     &__avatar
       width: 90px
       height: 90px
@@ -69,18 +70,29 @@
       object-fit: cover
       margin-bottom: 9px
     &__username
+      margin: 0
+      padding: 0
       font-weight: bold
       font-size: 12px
       line-height: 15px
       color: $primary
       margin-bottom: 10px
+    &__rating
+      margin: 0
+      padding: 0
+      display: flex
+      justify-content: space-between
+      align-items: center
     &__date
+      margin: 0
+      padding: 0
       font-weight: normal
       font-size: 10px
       line-height: 13px
       margin-bottom: 4px
     &__text
-      max-width: 537px
+      max-width: 535px
+      min-height: 114px
       font-size: 12px
       line-height: 160%
       text-align: justify

@@ -5,7 +5,8 @@
     &-grid
       max-width: 960px
     &-slider
-      width: 700px
+      width: 650px
+      height: 450px
   .swiper
     &-slide
       &__image
@@ -14,7 +15,6 @@
         object-fit: cover
     &-container
       max-width: 650px
-      height: 100%
   .booking
     width: 280px
   .map
@@ -62,18 +62,46 @@
   .swiper
     &-container
       max-width: 700px
-      height: 100%
   .booking
     width: 340px
     padding: 29px 22px 29px 23px
+    margin-left: 0
   .map
     width: 340px
+    margin-left: 0
   .newsletter
     padding: 71px 0 74px 0
   .reviews
     &-slider
       &__item
         max-width: 580px
+        &::after, &::before
+          display: none
+      &__button
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 99
+        width: 30px
+        height: 30px
+        border: none
+        outline: none
+        cursor: pointer
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 10px
+        background-color: transparent
+        &-prev
+          background-image: url(../img/arrow-prev-secondary.svg)
+          left: 1px
+        &-next
+          background-image: url(../img/arrow-next-secondary.svg)
+          right: 1px
+    &__title
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 49px
 @media (max-width: 767px)
   .container
     max-width: 650px
@@ -214,6 +242,10 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
+  .reviews
+    &-slider
+      max-width: 281px
+      min-height: 485px
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -281,3 +313,40 @@
       font-weight: 300
       font-size: 14px
       line-height: 18px
+  .reviews
+    &-slider
+      max-width: 281px
+      max-height: 500px
+      &__button
+        position: absolute
+        top: 9.1%
+        transform: translateY(-50%)
+        z-index: 99
+        width: 30px
+        height: 30px
+        border: none
+        outline: none
+        cursor: pointer
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 10px
+        background-color: transparent
+        &-prev
+          background-image: url(../img/arrow-prev-secondary.svg)
+          left: 96px
+        &-next
+          background-image: url(../img/arrow-next-secondary.svg)
+          right: 100px
+    &__title
+      max-width: 250px
+      max-height: 46px
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      padding: 0 11px 0 38px
+      margin-bottom: 42px
+    &__text
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
