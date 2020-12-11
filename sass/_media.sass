@@ -4,8 +4,8 @@
   .hotel
     &-grid
       max-width: 960px
-  .slider
-    width: 700px
+    &-slider
+      width: 700px
   .swiper
     &-slide
       &__image
@@ -57,8 +57,8 @@
       margin-bottom: 30px
     &-right
       flex-direction: row
-  .slider
-    width: 100%
+    &-slider
+      width: 100%
   .swiper
     &-container
       max-width: 700px
@@ -70,6 +70,10 @@
     width: 340px
   .newsletter
     padding: 71px 0 74px 0
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
 @media (max-width: 767px)
   .container
     max-width: 650px
@@ -123,8 +127,8 @@
       &__offer
         order: -1
         margin-left: 0
-  .slider
-    width: 100%
+    &-slider
+      width: 100%
   .swiper
     &-container
       max-width: 650px
@@ -143,6 +147,22 @@
       max-width: 650px
       width: 88%
       align-items: start
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::after, &::before
+          display: none
+      &__button
+        top: 32px
+        &-prev
+          left: 50%
+          transform: translate(-50%, 0)
+          margin-left: -65px
+        &-next
+          transform: translate(50%, 0)
+          margin-right: -65px
+          right: 50%
 @media (max-width: 567px)
   .container
     max-width: 500px
@@ -169,12 +189,12 @@
       &__offer
         order: -1s
         margin-left: 1px
+    &-slider
+      width: 100%
+      height: 250px
   .stars
     flex-basis: auto
     margin-right: 16px
-  .slider
-    width: 100%
-    height: 250px
   .swiper
     &-container
       max-width: 450px
@@ -220,12 +240,12 @@
       &__offer
         order: -1s
         margin-left: 1px
+    &-slider
+      max-width: 280px
+      height: 180px
   .stars
     flex-basis: auto
     margin-right: 16px
-  .slider
-    max-width: 280px
-    height: 180px
   .swiper
     &-container
       max-width: 280px
