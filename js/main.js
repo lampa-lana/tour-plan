@@ -21,6 +21,5 @@ var reviewsSlider = new Swiper('.reviews-slider', {
   navigation: {
     nextEl: '.reviews-slider__button-next',
     prevEl: '.reviews-slider__button-prev',
-  }
-  
+  },  
 });

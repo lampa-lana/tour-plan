@@ -852,10 +852,7 @@ template {
 .newsletter {
   position: relative;
   padding: 78px 0 66px 0;
-  background-image: url(../img/newsletter-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: transparent;
 }
 
 .newsletter::before {
@@ -1083,11 +1080,12 @@ template {
 
 .reviews-slider__text {
   max-width: 535px;
-  min-height: 114px;
+  height: 114px;
+  overflow-y: auto;
   font-size: 12px;
   line-height: 160%;
-  text-align: justify;
   margin: auto;
+  text-align: justify;
 }
 
 /** подключение стилей для адаптива**/
@@ -1199,27 +1197,14 @@ template {
     display: none;
   }
   .reviews-slider__button {
-    position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    z-index: 99;
-    width: 30px;
-    height: 30px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 10px;
-    background-color: transparent;
   }
   .reviews-slider__button-prev {
-    background-image: url(../img/arrow-prev-secondary.svg);
     left: 1px;
   }
   .reviews-slider__button-next {
-    background-image: url(../img/arrow-next-secondary.svg);
     right: 1px;
   }
   .reviews__title {
@@ -1227,6 +1212,9 @@ template {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 49px;
+  }
+  .reviews-user {
+    margin-bottom: 20px;
   }
 }
 
@@ -1362,6 +1350,14 @@ template {
     margin-right: -65px;
     right: 50%;
   }
+  .reviews-slider__text {
+    height: 133px;
+    overflow-y: scroll;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+    text-align: justify;
+  }
 }
 
 @media (max-width: 567px) {
@@ -1440,6 +1436,14 @@ template {
   .reviews-slider {
     max-width: 281px;
     min-height: 485px;
+  }
+  .reviews-slider__text {
+    height: 300px;
+    overflow-y: scroll;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+    text-align: justify;
   }
 }
 
@@ -1534,28 +1538,23 @@ template {
     max-width: 281px;
     max-height: 500px;
   }
+  .reviews-slider__text {
+    height: 269px;
+    overflow-y: scroll;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+    text-align: left;
+  }
   .reviews-slider__button {
-    position: absolute;
     top: 9.1%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    z-index: 99;
-    width: 30px;
-    height: 30px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 10px;
-    background-color: transparent;
   }
   .reviews-slider__button-prev {
-    background-image: url(../img/arrow-prev-secondary.svg);
     left: 96px;
   }
   .reviews-slider__button-next {
-    background-image: url(../img/arrow-next-secondary.svg);
     right: 100px;
   }
   .reviews__title {
@@ -1567,11 +1566,6 @@ template {
     text-align: center;
     padding: 0 11px 0 38px;
     margin-bottom: 42px;
-  }
-  .reviews__text {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 160%;
   }
 }
 /*# sourceMappingURL=style.css.map */

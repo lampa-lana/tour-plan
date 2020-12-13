@@ -78,30 +78,19 @@
         &::after, &::before
           display: none
       &__button
-        position: absolute
         top: 50%
         transform: translateY(-50%)
-        z-index: 99
-        width: 30px
-        height: 30px
-        border: none
-        outline: none
-        cursor: pointer
-        background-repeat: no-repeat
-        background-position: center
-        background-size: 10px
-        background-color: transparent
         &-prev
-          background-image: url(../img/arrow-prev-secondary.svg)
           left: 1px
         &-next
-          background-image: url(../img/arrow-next-secondary.svg)
           right: 1px
     &__title
       font-weight: bold
       font-size: 30px
       line-height: 38px
       margin-bottom: 49px
+    &-user
+      margin-bottom: 20px
 @media (max-width: 767px)
   .container
     max-width: 650px
@@ -191,6 +180,13 @@
           transform: translate(50%, 0)
           margin-right: -65px
           right: 50%
+      &__text
+        height: 133px
+        overflow-y: scroll
+        font-weight: normal
+        font-size: 12px
+        line-height: 160%
+        text-align: justify
 @media (max-width: 567px)
   .container
     max-width: 500px
@@ -246,6 +242,13 @@
     &-slider
       max-width: 281px
       min-height: 485px
+      &__text
+        height: 300px
+        overflow-y: scroll
+        font-weight: normal
+        font-size: 12px
+        line-height: 160%
+        text-align: justify
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -317,25 +320,19 @@
     &-slider
       max-width: 281px
       max-height: 500px
+      &__text
+        height: 269px
+        overflow-y: scroll
+        font-weight: normal
+        font-size: 12px
+        line-height: 160%
+        text-align: left
       &__button
-        position: absolute
         top: 9.1%
         transform: translateY(-50%)
-        z-index: 99
-        width: 30px
-        height: 30px
-        border: none
-        outline: none
-        cursor: pointer
-        background-repeat: no-repeat
-        background-position: center
-        background-size: 10px
-        background-color: transparent
         &-prev
-          background-image: url(../img/arrow-prev-secondary.svg)
           left: 96px
         &-next
-          background-image: url(../img/arrow-next-secondary.svg)
           right: 100px
     &__title
       max-width: 250px
@@ -346,7 +343,3 @@
       text-align: center
       padding: 0 11px 0 38px
       margin-bottom: 42px
-    &__text
-      font-weight: normal
-      font-size: 12px
-      line-height: 160%
