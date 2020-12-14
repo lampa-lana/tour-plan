@@ -1480,6 +1480,12 @@ template {
     width: 49%;
     height: 255px;
   }
+  .card__title-golf {
+    margin-right: 20px;
+  }
+  .card__title-quest {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 567px) {
@@ -1693,10 +1699,10 @@ template {
     margin-bottom: 42px;
   }
   .activities {
-    padding-top: 3px;
+    padding-top: 1px;
   }
   .activities__title {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
     font-weight: bold;
     font-size: 18px;
     line-height: 23px;
