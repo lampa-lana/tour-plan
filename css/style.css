@@ -1665,6 +1665,9 @@ template {
     font-size: 14px;
     line-height: 18px;
   }
+  .reviews {
+    padding: 39px 0 71px 0;
+  }
   .reviews-slider {
     max-width: 281px;
     max-height: 500px;
@@ -1696,7 +1699,7 @@ template {
     line-height: 23px;
     text-align: center;
     padding: 0 11px 0 38px;
-    margin-bottom: 42px;
+    margin-bottom: 43px;
   }
   .activities {
     padding-top: 1px;
@@ -1713,7 +1716,7 @@ template {
             order: 1;
   }
   .activities__card-trip {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
   .activities__card-quest {
     -webkit-box-ordinal-group: 2;
