@@ -22,6 +22,11 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
+    &__info
+      flex-basis: 22%
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -95,7 +100,7 @@
       line-height: 38px
       margin-bottom: 49px
   .activities
-    padding: 34px 0 98px 0
+    padding: 34px 0 48px 0
     &-wrapper
       flex-wrap: wrap
   .card
@@ -109,6 +114,71 @@
         margin-right: 130px
       &-quest
         margin-right: 80px
+  .footer
+    padding-top: 72px
+    &-wrapper
+      grid-template-columns: 75px 75px 126px 116px 115px 80px
+      grid-row-gap: 46px
+    &__input
+      &-name
+        flex-basis: 48%
+      &-number
+        flex-basis: 47%
+    &__logo
+      margin: 0
+      width: 98px
+      grid-row: 1 / 2
+      grid-column: span 2
+      &-image
+        width: 100%
+        height: 100%
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+      &-links
+        align-items: flex-end
+        min-height: 33px
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 5
+      &-form
+        grid-row: 4
+        grid-column: span 5
+        width: 537px
+    &__form
+      margin-bottom: 10px
+    &__infopayment
+      grid-column: 1 / 7
+      justify-content: space-between
+    &__infopay
+      flex-basis: 42%
+    &__image-pay
+      max-width: 125px
+    &__title
+      font-size: 18px
+      &--inline
+        margin: 10px 41px 0 0
+      &--mb-3
+        margin: 13px 0 26px 0
+      &--mb-6
+        margin: 0 0 32px 0
+    &__info
+      flex-basis: 18%
+    &__button
+      min-width: 159px
+    &__item
+      &--mb-2
+        margin-bottom: 17px
 @media (max-width: 767px)
   .container
     max-width: 650px
@@ -216,6 +286,28 @@
         margin-right: 20px
       &-quest
         margin-right: 10px
+  .footer
+    &-wrapper
+      grid-template-columns: minmax(70px, 100px) minmax(30px, 60px) minmax(90px, 120px) minmax(90px, 120px) minmax(70px, 100px) minmax(70px, 100px)
+    &__input
+      flex-basis: 100%
+    &__logo
+      margin: 0
+      width: 98px
+      &-image
+        width: 100%
+        height: 100%
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+    &__contact
+      &-form
+        max-width: 516px
+    &__infopay
+      flex-basis: 55%
+    &__info
+      flex-basis: 20%
 @media (max-width: 567px)
   .container
     max-width: 500px
@@ -280,6 +372,55 @@
         text-align: justify
   .card
     width: 100%
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+      margin: 0
+      width: 98px
+      &-image
+        width: 100%
+        height: 100%
+    &__social
+      &-network
+        justify-self: start
+        flex-direction: column
+        grid-row: 2
+        grid-column: 1
+      &-links
+        align-self: start
+    &__additional
+      justify-self: start
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      justify-self: start
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+        width: 280px
+    &__infopayment
+      flex-direction: column
+      grid-row: 8
+      grid-column: 1
+      align-items: flex-start
+    &__title
+      font-size: 18px
+      &--inline
+        margin: 0 0 18px 0
+    &__info
+      flex-basis: 37%
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -377,6 +518,7 @@
       margin-bottom: 43px
   .activities
     padding-top: 1px
+    padding-bottom: 40px
     &__title
       margin-bottom: 36px
       font-weight: bold
@@ -398,3 +540,67 @@
         margin-right: 30px
       &-quest
         margin-right: 10px
+  .footer
+    padding-top: 69px
+    &-wrapper
+      grid-row-gap: 29px
+    &__logo
+      width: 94px
+      margin-bottom: 10px
+      &-image
+        width: 100%
+        height: 100%
+    &__title
+      &--inline
+        margin: 0 0 16px 0
+      &--mb-3
+        margin: 10px 0 24px
+      &--mb-6
+        margin: 0 0 16px 0
+    &__additional
+      justify-self: start
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__legal
+      justify-self: start
+      grid-row: 3
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+        width: 280px
+    &__infopayment
+      flex-direction: column
+      align-items: start
+      grid-row: 8
+      grid-column: 1
+    &__icon
+      &-wrapper
+        min-width: 32px
+    &__item
+      &--mb-2
+        margin-bottom: 23px
+    &__ul
+      &--mini
+        margin-bottom: 30px
+    &__form-submit
+      margin-bottom: 1px
+      display: flex
+      flex-direction: column-reverse
+      align-items: flex-start
+    &__textarea
+      margin-bottom: 14px
+    &__info
+      margin-bottom: 15px
+    &__button
+      padding: 18px 18px 18px 18px
+      min-width: 160px
+    &__form
+      margin-bottom: 2px

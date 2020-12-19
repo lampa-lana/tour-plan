@@ -630,7 +630,9 @@
             </ul>
           </div>
           <div class="footer__list footer__additional">
-            <h3 class="footer__title">Additional Information</h3>
+            <h3 class="footer__title footer__title--mb-4">
+              Additional Information
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="" class="footer__link">About Us</a>
@@ -680,8 +682,8 @@
             <!-- /.footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list fppter__legal">
-            <h3 class="footer__title">Legal Information</h3>
+          <div class="footer__list footer__legal">
+            <h3 class="footer__title footer__title--mb-4">Legal Information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">Terms & Conditions</a>
@@ -700,11 +702,11 @@
           <!-- /.footer-list -->
           <div class="footer__contact-details">
             <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
-            <p class="footer__text">
+            <p class="footer__text footer__text--slogan">
               Feel free to contact us by phone, email or by our contact form
             </p>
-            <ul class="footer__ul">
-              <li class="footer__item footer__item-mb-2">
+            <ul class="footer__ul footer__ul--mini">
+              <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
                   <img
                     src="img/map-marker.svg"
@@ -715,7 +717,7 @@
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
               </li>
-              <li class="footer__item footer__item-mb-2">
+              <li class="footer__item footer__item--mb-5">
                 <div class="footer__icon-wrapper">
                   <img
                     src="img/contact-phone-call.svg"
@@ -742,16 +744,16 @@
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+            <h3 class="footer__title footer__title--mb-6">Send us a message</h3>
             <form action="#" class="footer__form">
               <input
                 type="text"
-                class="input footer__input"
+                class="input footer__input footer__input-name"
                 placeholder="Your Full Name*"
               />
               <input
                 type="text"
-                class="input footer__input"
+                class="input footer__input footer__input-number"
                 placeholder="Phone Number*"
               />
               <textarea
@@ -759,22 +761,28 @@
                 class="footer__textarea"
                 placeholder="Message"
               ></textarea>
-              <button class="button footer__button" type="submit">Send</button>
-              <span class="footer__info">* Required Fields</span>
+              <div class="footer__form-submit">
+                <button class="button footer__button" type="submit">
+                  Send
+                </button>
+                <span class="footer__info">* Required Fields</span>
+              </div>
             </form>
           </div>
           <!-- /.footer__contact-form -->
-          <div class="footer__infopay">
-            <span class="footer__text-infopay"
-              >Disclaimer &nbsp; Conditions of use &nbsp; Cancellation
-              policy</span
-            >
+          <div class="footer__infopayment">
+            <div class="footer__infopay">
+              <a href="#" class="footer__text-info">Disclaimer &nbsp;</a>
+              <a href="#" class="footer__text-info">Conditions of use &nbsp;</a>
+              <a href="#" class="footer__text-info">Cancellation policy</a>
+            </div>
             <div class="footer__image-pay">
-              <img
-                src="img/card-pay.png"
-                alt="image: payment systems"
-                class="footer__payment"
-              />
+              <a href="#" class="footer__image-infopay">
+                <img
+                  src="img/card-pay.png"
+                  alt="image: payment systems"
+                  class="footer__payment"
+              /></a>
             </div>
           </div>
         </div>
