@@ -39,14 +39,14 @@
               />
             </button>
           </form>
-          <a href="#" class="user navbar__user">
+          <a href="https://lkfl2.nalog.ru/lkfl/login" class="user navbar__user" target="__blank">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
               class="user__avatar"
-            />
-            <span class="user__name">Nathan</span>
-          </a>
+            />          
+              <span class="user__name">Nathan</span>
+            </a>               
           <!--/.user-->
           <button class="menu-button navbar-top__menu-button">
             <span class="menu-button__line"></span>
@@ -61,25 +61,25 @@
         <div class="container navbar-bottom__container">
           <ul class="navbar-menu">
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">All Deals</a>
+              <a href="#" class="navbar-menu__link" target="__blank">All Deals</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotels</a>
+              <a href="#" class="navbar-menu__link" target="__blank">Hotels</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Activities</a>
+              <a href="#" class="navbar-menu__link" target="__blank">Activities</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+              <a href="#" class="navbar-menu__link" target="__blank">Hotel Day Packages</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Restaurants</a>
+              <a href="#" class="navbar-menu__link" target="__blank">Restaurants</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Events</a>
+              <a href="#" class="navbar-menu__link" target="__blank">Events</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Rodrigues</a>
+              <a href="#" class="navbar-menu__link" target="__blank">Rodrigues</a>
             </li>
           </ul>
           <!--/.navbar-menu-->
@@ -545,7 +545,8 @@
             <h3 class="card__title card__title-corner">
               The curious corner <br />of chamarel
             </h3>
-            <button class="card__button">Book Now</button>
+            <form target="_blank" action="https://travel.yandex.ru/hotels/miami-beach/the-pavilion-residences/?adults=2&checkinDate=2020-12-21&checkoutDate=2020-12-22&childrenAges=">
+              <button class="card__button">Book Now</button></form>            
           </div>
           <!-- /.card -->
           <div class="card activities__card activities__card-golf">
@@ -557,7 +558,8 @@
             <h3 class="card__title card__title-golf">
               Gymkhana club golf course
             </h3>
-            <button class="card__button">Book Now</button>
+           <form target="_blank" action="https://travel.yandex.ru/hotels/miami/icon-residences-by-flashstay/?adults=2&checkinDate=2020-12-21&checkoutDate=2020-12-22&childrenAges=">
+              <button class="card__button">Book Now</button></form>
           </div>
           <!-- /.card -->
           <div class="card activities__card activities__card-trip">
@@ -569,7 +571,8 @@
             <h3 class="card__title card__title-trip">
               Tamarind falls hiking <br />trip - full day
             </h3>
-            <button class="card__button">Book Now</button>
+           <form target="_blank" action="https://travel.yandex.ru/hotels/miami-beach/1-hotel-south-beach/?adults=2&checkinDate=2020-12-21&checkoutDate=2020-12-22&childrenAges=">
+              <button class="card__button">Book Now</button></form>
           </div>
           <!-- /.card -->
           <div class="card activities__card activities__card-quest">
@@ -581,7 +584,9 @@
             <h3 class="card__title card__title-quest">
               The blue marine discovery quest
             </h3>
-            <button class="card__button">Book Now</button>
+           <form target="_blank" action="https://travel.yandex.ru/hotels/miami-beach/suites-at-congress-ocean-drive/?adults=2&checkinDate=2020-12-21&checkoutDate=2020-12-22&childrenAges=">
+              <button class="card__button">Book Now</button></form>
+          </div>
           </div>
           <!-- /.card -->
         </div>
@@ -594,11 +599,12 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer__logo">
-            <img
-              src="img/vertical-logo.svg"
-              alt="Logo: Best Tour Plan"
-              class="logo footer__logo-image"
-            />
+            <a href="#" class="logo"
+              ><img
+                src="img/vertical-logo.svg"
+                alt="Logo: Best Tour Plan"
+                class="logo footer__logo-image"
+            /></a>
           </div>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">All Categories</h3>
@@ -660,19 +666,28 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.facebook.com/"
+                class="footer__link"
+                target="_blank"
                 ><img
                   src="img/facebook.svg"
                   alt="icon: facebook"
                   class="footer__icon-sn"
               /></a>
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.youtube.com/"
+                class="footer__link"
+                target="_blank"
                 ><img
                   src="img/youtube.svg"
                   alt="icon: youtube"
                   class="footer__icon-sn"
               /></a>
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.instagram.com/"
+                class="footer__link"
+                target="_blank"
                 ><img
                   src="img/instagram.svg"
                   alt="icon: instagram"
@@ -714,8 +729,8 @@
                     class="footer__icon"
                   />
                 </div>
-                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
-                States
+                <a class="footer__map-marker" target="_blank" href="https://www.google.com/maps/search/9748+Blossom+Hill+Rd+undefined+Lansing,+Idaho+68545+United+States/@43.8810159,-112.7179739,5.5z?hl=en" >9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                States</a>              
               </li>
               <li class="footer__item footer__item--mb-5">
                 <div class="footer__icon-wrapper">
@@ -725,10 +740,18 @@
                     class="footer__icon"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__contact-phone">
+                  <a href="tel:269 1500" class="footer__phone">
+                    Tel (business hours) : 269 1500</a
+                  ></br>
+                  <a href="tel:52-56-61-38" class="footer__phone">
+                    Tel (hotline) Monday - Saturday: &zwj;52&zwj;-&zwj;56&zwj;-&zwj;61&zwj;-&zwj;38&zwj; (08:00 am –
+                    20:00 pm)</a
+                  ></br>
+                  <a href="tel:52-56-61-38" class="footer__phone">
+                    Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
+                  >
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -738,7 +761,8 @@
                     class="footer__icon"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto: cherly.lawson@example.com" class="footer__email">
+                  cherly.lawson@example.com</a>                
               </li>
             </ul>
           </div>
@@ -772,12 +796,14 @@
           <!-- /.footer__contact-form -->
           <div class="footer__infopayment">
             <div class="footer__infopay">
-              <a href="#" class="footer__text-info">Disclaimer &nbsp;</a>
-              <a href="#" class="footer__text-info">Conditions of use &nbsp;</a>
-              <a href="#" class="footer__text-info">Cancellation policy</a>
+              <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B8%D1%81%D1%8C%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BE%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8" target="_blank" class="footer__text-info">Disclaimer &nbsp;</a>
+              <a href="https://addreality.com/ru/termsofuse/Terms_of_use_Addreality.pdf" target="_blank" class="footer__text-info">Conditions of use &nbsp;</a>
+              <a href="https://www.booking.com/content/terms.ru.html?aid=356980;label=gog235jc-1DCBQoggJCBXRlcm1zSDNYA2jCAYgBAZgBIbgBF8gBDNgBA-gBAYgCAagCA7gC0dj8_gXAAgHSAiRhMjMzMjY4My1iNjM1LTQwODYtYTQ2ZC0zNTk0Mjk0NDlkZjHYAgTgAgE;sid=751fd2990a7e1871f8232d8c1e82c1db;keep_landing=1&#tcs_s6" target="_blank" class="footer__text-info"
+                >Cancellation policy</a
+              >
             </div>
             <div class="footer__image-pay">
-              <a href="#" class="footer__image-infopay">
+              <a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D1%91%D0%B6%D0%BD%D1%8B%D1%85_%D0%BA%D0%B0%D1%80%D1%82" target="_blank" class="footer__image-infopay">
                 <img
                   src="img/card-pay.png"
                   alt="image: payment systems"
