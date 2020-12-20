@@ -38,7 +38,7 @@
   .navbar
     &-top
       padding-top: 30px
-      padding-bottom: 26px
+      padding-bottom: 28px
     &__search
       margin-left: 47px
       max-width: 340px
@@ -48,12 +48,25 @@
       &__link
         font-size: 12px
         line-height: 15px
+        transition: none
+        &::after, &::before
+          display: none
+        &:hover
+          color: $light
     &-bottom
       &__container
         width: 673px
+    &__user
+      &::after, &::before
+        display: none
+      &:hover
+        color: $text-color
   .search
     &__input
       width: 340px
+    &__button
+      &::after, &::before
+        display: none
   .rating
     margin-top: 3px
   .hotel
@@ -75,11 +88,18 @@
     height: 210px
     padding: 29px 22px 29px 23px
     margin-left: 0
+    &__button
+      &::after, &::before
+        display: none
   .map
     width: 340px
     margin-left: 0
   .newsletter
     padding: 71px 0 74px 0
+  .subscribe
+    &__button
+      &::after, &::before
+        display: none
   .reviews
     &-slider
       &__item
@@ -115,11 +135,14 @@
         margin-right: 130px
       &-quest
         margin-right: 80px
+    &__button
+      &::after, &::before
+        display: none
   .footer
     padding-top: 72px
     &-wrapper
       grid-template-columns: 75px 75px 126px 116px 115px 80px
-      grid-row-gap: 46px
+      grid-row-gap: 43px
     &__input
       &-name
         flex-basis: 48%
@@ -133,6 +156,26 @@
       &-image
         width: 100%
         height: 100%
+    &__link
+      &::after, &::before
+        display: none
+      &:hover
+        color: #BDBDBD
+    &__map-marker
+      &::after, &::before
+        display: none
+      &:hover
+        color: #BDBDBD
+    &__phone
+      &::after, &::before
+        display: none
+      &:hover
+        color: #BDBDBD
+    &__email
+      &::after, &::before
+        display: none
+      &:hover
+        color: #BDBDBD
     &__social
       &-network
         grid-row: 1 / 2
@@ -157,7 +200,7 @@
         grid-column: span 5
         width: 537px
     &__form
-      margin-bottom: 10px
+      margin-bottom: 13px
     &__infopayment
       grid-column: 1 / 7
       justify-content: space-between
@@ -168,18 +211,25 @@
     &__title
       font-size: 18px
       &--inline
-        margin: 10px 41px 0 0
+        margin: 5px 40px 0 -1px
       &--mb-3
-        margin: 13px 0 26px 0
+        margin: 17px 0 26px 0
       &--mb-6
         margin: 0 0 36px 0
     &__info
       flex-basis: 18%
     &__button
       min-width: 159px
+      &::after, &::before
+        display: none
+    &__text-info
+      &::after, &::before
+        display: none
+      &:hover
+        color: #FFFFFF
     &__item
       &--mb-2
-        margin-bottom: 14px
+        margin-bottom: 16px
 @media (max-width: 767px)
   .container
     max-width: 650px
