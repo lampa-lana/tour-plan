@@ -381,7 +381,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
 }
 
 .navbar-top__menu-button {
@@ -439,6 +439,57 @@ template {
 }
 
 .navbar-menu__link:hover {
+  color: #EC1F46;
+}
+
+.navbar__userprop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.navbar__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navbar__username {
+  margin-left: 20px;
+}
+
+.navbar__user {
+  display: inline-block;
+  color: #333333;
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.navbar__user:after {
+  display: block;
+  content: '';
+  width: 0%;
+  height: 1px;
+  background: #EC1F46;
+  ransition: width 0.4s ease-in-out;
+}
+
+.navbar__user:hover:after, .navbar__user:focus:after {
+  width: 100%;
+}
+
+.navbar__user:hover {
   color: #EC1F46;
 }
 
@@ -528,31 +579,6 @@ template {
 
 .search__icon {
   padding-top: 2px;
-}
-
-.user {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-}
-
-.user__avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.user__name {
-  margin-left: 18px;
-  color: #333333;
-  font-size: 14px;
-  padding-top: 3px;
 }
 
 /** стили для блока  хлебные крошки**/
@@ -780,7 +806,7 @@ template {
   width: 350px;
   min-height: 210px;
   border-radius: 8px;
-  padding: 29px 29px 29px 26px;
+  padding: 29px 29px 26px 26px;
   background-color: #0A223D;
   color: #fff;
   margin-left: 30px;
@@ -1859,7 +1885,7 @@ template {
   }
   .navbar-top {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 26px;
   }
   .navbar__search {
     margin-left: 47px;
@@ -1909,6 +1935,7 @@ template {
   }
   .booking {
     width: 340px;
+    height: 210px;
     padding: 29px 22px 29px 23px;
     margin-left: 0;
   }
@@ -1946,7 +1973,7 @@ template {
     margin-bottom: 49px;
   }
   .activities {
-    padding: 33px 0 47px 0;
+    padding: 33px 0 49px 0;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -2088,7 +2115,7 @@ template {
     height: 13px;
     margin-bottom: 5px;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  .navbar__search, .navbar-menu, .navbar__userprop {
     display: none;
   }
   .menu-button {
