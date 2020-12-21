@@ -15,7 +15,7 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -25,7 +25,10 @@
               class="logo__image"
             />
           </a>
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -39,7 +42,7 @@
               />
             </button>
           </form>
-          <div class="navbar__userprop">
+          <div class="navbar__userprop navbar__userprop--mobile--hidden">
             <div class="navbar__useravatar">
               <img
                 src="img/user-avatar.jpg"
@@ -69,6 +72,44 @@
       <div class="navbar-bottom">
         <div class="container navbar-bottom__container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <div class="navbar__userprop navbar__userprop--mobile--visible">
+                <div class="navbar__useravatar">
+                  <img
+                    src="img/user-avatar.jpg"
+                    alt="Avatar: Nathan"
+                    class="navbar__avatar"
+                  />
+                </div>
+                <div class="navbar__username navbar__username--light">
+                  <a
+                    href="https://lkfl2.nalog.ru/lkfl/login"
+                    class="user navbar__user"
+                    target="_blank"
+                    >Nathan</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile--visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img
+                    src="img/search.svg"
+                    alt="Icon: search"
+                    class="search__icon"
+                  />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link" target="_blank"
                 >All Deals</a
