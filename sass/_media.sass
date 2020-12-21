@@ -43,7 +43,7 @@
       margin-left: 47px
       max-width: 340px
     &-menu
-      padding-top: 20px
+      padding-top: 19px
       padding-bottom: 21px
       &__link
         font-size: 12px
@@ -272,12 +272,11 @@
           &--visible
             display: block
     &__mobile
-      &--fixed
-        position: fixed
-        top: 0
-        right: 0
-        left: 0
-        z-index: 99
+      position: fixed
+      top: 0
+      right: 0
+      left: 0
+      z-index: 99
     &__username
       &--light
         margin-left: 0
@@ -409,10 +408,47 @@
       width: 99px
       height: 88%
   .navbar
-    &__search, &-menu, &__user
+    &__search, &__userprop
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__userprop
+      flex-direction: column
+      &--mobile
+        &--visible
+          margin-top: 30px
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 71px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &--visible
+            display: block
+    &__mobile
+      position: fixed
+      top: 0
+      right: 0
+      left: 0
+      z-index: 99
+    &__username
+      &--light
+        margin-left: 0
+        margin-top: 10px
+    &__user
+      color: $light
     &-top
-      padding: 28px 0 29px 0
+      padding: 28px 0 30px 0
   .hotel
     padding-top: 2px
     padding-bottom: 37px
@@ -522,10 +558,68 @@
       width: 99px
       height: 88%
   .navbar
-    &__search, &-menu, &__user
+    &__search
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+          margin-left: 0px
+          margin-top: 9px
+          margin-bottom: 36px
+    &__userprop
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+          margin-left: 0px
+          margin-top: 11px
+          margin-bottom: 19px
+    &__username
+      &--light
+        margin-left: 0
+        margin-top: 6px
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 0
+        &--mini
+          margin-bottom: 17px
+        &--mobile
+          &--visible
+            display: block
+  .search
+    &__input
+      width: 244px
+    &__userprop
+      flex-direction: column
+      &--mobile
+        &--visible
+          margin-top: 10px
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 71px
+      &--visible
+        display: block
+    &__mobile
+      position: fixed
+      top: 0
+      right: 0
+      left: 0
+      z-index: 99
+    &__user
+      color: $light
+      margin-top: 8px
     &-top
       padding: 28px 0 29px 0
+  .breadcrumb
+    &-list
+      padding: 12px 0 18px 0
   .hotel
     padding-top: 2px
     padding-bottom: 40px

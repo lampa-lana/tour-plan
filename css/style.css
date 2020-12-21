@@ -386,6 +386,8 @@ template {
 
 .navbar-top__menu-button {
   display: none;
+  border: none;
+  outline: none;
 }
 
 .navbar__search {
@@ -1896,7 +1898,7 @@ template {
     max-width: 340px;
   }
   .navbar-menu {
-    padding-top: 20px;
+    padding-top: 19px;
     padding-bottom: 21px;
   }
   .navbar-menu__link {
@@ -2221,7 +2223,7 @@ template {
   .navbar-menu__item--mobile--visible {
     display: block;
   }
-  .navbar__mobile--fixed {
+  .navbar__mobile {
     position: fixed;
     top: 0;
     right: 0;
@@ -2418,11 +2420,62 @@ template {
     width: 99px;
     height: 88%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  .navbar__search--mobile--hidden, .navbar__userprop--mobile--hidden {
     display: none;
   }
+  .navbar__search--mobile--visible, .navbar__userprop--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__userprop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar__userprop--mobile--visible {
+    margin-top: 30px;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 71px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+  }
+  .navbar__mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .navbar__username--light {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .navbar__user {
+    color: #fff;
+  }
   .navbar-top {
-    padding: 28px 0 29px 0;
+    padding: 28px 0 30px 0;
   }
   .hotel {
     padding-top: 2px;
@@ -2599,11 +2652,86 @@ template {
     width: 99px;
     height: 88%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  .navbar__search--mobile--hidden {
     display: none;
   }
-  .navbar-top {
+  .navbar__search--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0px;
+    margin-top: 9px;
+    margin-bottom: 36px;
+  }
+  .navbar__userprop--mobile--hidden {
+    display: none;
+  }
+  .navbar__userprop--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0px;
+    margin-top: 11px;
+    margin-bottom: 19px;
+  }
+  .navbar__username--light {
+    margin-left: 0;
+    margin-top: 6px;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 0;
+  }
+  .navbar-menu__item--mini {
+    margin-bottom: 17px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+  }
+  .search__input {
+    width: 244px;
+  }
+  .search__userprop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .search__userprop--mobile--visible {
+    margin-top: 10px;
+  }
+  .search-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 71px;
+  }
+  .search-bottom--visible {
+    display: block;
+  }
+  .search__mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .search__user {
+    color: #fff;
+    margin-top: 8px;
+  }
+  .search-top {
     padding: 28px 0 29px 0;
+  }
+  .breadcrumb-list {
+    padding: 12px 0 18px 0;
   }
   .hotel {
     padding-top: 2px;
