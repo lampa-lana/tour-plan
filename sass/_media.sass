@@ -61,6 +61,12 @@
         display: none
       &:hover
         color: $text-color
+    &__user
+      &--light
+        &::after, &::before
+          display: none
+        &:hover
+          color: $light
   .search
     &__input
       width: 340px
@@ -264,6 +270,8 @@
       top: 71px
       &--visible
         display: block
+        max-height: 100%
+        overflow-y: auto
     &-menu
       flex-direction: column
       &__item
@@ -283,6 +291,11 @@
         margin-top: 10px
     &__user
       color: $light
+    &__search
+      margin-left: 1px
+  .search
+    &__input
+      width: 244px
   .menu
     &-button
       display: flex

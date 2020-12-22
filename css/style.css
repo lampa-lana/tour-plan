@@ -1922,6 +1922,12 @@ template {
   .navbar__user:hover {
     color: #333333;
   }
+  .navbar__user--light::after, .navbar__user--light::before {
+    display: none;
+  }
+  .navbar__user--light:hover {
+    color: #fff;
+  }
   .search__input {
     width: 340px;
   }
@@ -2210,6 +2216,8 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    max-height: 100%;
+    overflow-y: auto;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -2236,6 +2244,12 @@ template {
   }
   .navbar__user {
     color: #fff;
+  }
+  .navbar__search {
+    margin-left: 1px;
+  }
+  .search__input {
+    width: 244px;
   }
   .menu-button {
     display: -webkit-box;
