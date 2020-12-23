@@ -336,11 +336,16 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__search">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__search"
+        >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -854,19 +859,23 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-6">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 class="input footer__input footer__input-name"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
+                pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
                 class="input footer__input footer__input-number"
-                placeholder="Phone Number*"
+                placeholder="Phone Number +7 (900) 123-45-67*"
+                name="phone"
               />
               <textarea
-                name="footer__massage"
+                type="text"
+                name="text"
                 class="footer__textarea"
                 placeholder="Message"
               ></textarea>
