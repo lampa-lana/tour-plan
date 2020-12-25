@@ -166,10 +166,10 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-              <h1 class="hotel-name hotel-info__name">Сообщение отправлено!</h1>
+              <h1 class="hotel-name hotel-info__name">Message sent!</h1>
             </div>
             <p class="hotel-discription hotel-info__discription">
-              Наш менеджер позвонит вам через 5 минут.
+              We will call you back in 5 minutes.
             </p>
           </div>
         </div>
@@ -361,7 +361,12 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-6">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
+            <form
+              action="send.php"
+              method="POST"
+              target="_blank"
+              class="footer__form"
+            >
               <input
                 type="text"
                 class="input footer__input footer__input-name"
@@ -375,7 +380,8 @@
                 name="phone"
               />
               <textarea
-                name="massage"
+                type="text"
+                name="text"
                 class="footer__textarea"
                 placeholder="Message"
               ></textarea>

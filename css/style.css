@@ -21,6 +21,43 @@ body {
   width: 100%;
 }
 
+.input {
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  height: 50px;
+  padding: 0 23px 0 23px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: normal;
+}
+
+.textarea {
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  padding: 18px 23px;
+  resize: none;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.button {
+  min-width: 165px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 /** подключение normalize.scss **/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -565,16 +602,17 @@ template {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: -3px;
   width: 100%;
   height: 100%;
   z-index: 1;
   opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 40px solid #02022b9c;
+  border-radius: 2px;
+  border: 5px solid #EC1F46;
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .search__button:hover::after {
@@ -921,6 +959,8 @@ template {
 .booking__button {
   position: relative;
   width: 100%;
+  height: 45px;
+  padding: 12px 18px 18px 18px;
   min-height: 45px;
   font-weight: 600;
   font-size: 14px;
@@ -1088,7 +1128,7 @@ template {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: #f7ecec00;
+  background-color: #eee8e800;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -1103,14 +1143,15 @@ template {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: -3px;
   width: 100%;
   height: 100%;
   z-index: 1;
   opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 70px solid #02022b9c;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 2px;
+  border: 5px solid #EC1F46;
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
 }
@@ -1520,49 +1561,24 @@ template {
 }
 
 .footer__input {
-  background: #FFFFFF;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  height: 50px;
   margin-bottom: 15px;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .footer__input-name {
-  padding: 0 23px 0 23px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .footer__input-number {
-  padding: 0 23px 0 23px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .footer__textarea {
   width: 539px;
   height: 123px;
-  background: #FFFFFF;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  padding: 18px 23px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  resize: none;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
   margin-bottom: 22px;
 }
 
@@ -1584,16 +1600,6 @@ template {
   min-width: 165px;
   min-height: 50px;
   padding: 18px 18px 18px 18px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #fff;
-  background-color: #EC1F46;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  cursor: pointer;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   -webkit-transition: all 0.5s;
@@ -1837,6 +1843,107 @@ template {
           transform: scale(1.15, 1.15);
 }
 
+/** стили для блока  модальных окон (modal )**/
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  max-width: 478px;
+  height: 487px;
+  left: 50%;
+  top: 49%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 33px 88px 33px 88px;
+  background-color: #0A223D;
+  border-radius: 8px;
+  color: #fff;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 20px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__textarea {
+  width: 100%;
+  min-height: 123px;
+  margin-bottom: 15px;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+}
+
+.modal__title {
+  margin: 2px 0 15px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.modal__button {
+  min-width: 163px;
+  padding: 14px 18px 18px 18px;
+}
+
+.modal__form-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /** подключение стилей для адаптива**/
 @media (max-width: 1200px) {
   .container {
@@ -1875,6 +1982,11 @@ template {
   .footer__info {
     -ms-flex-preferred-size: 22%;
         flex-basis: 22%;
+  }
+  .modal__dialog {
+    overflow: auto;
+    position: fixed;
+    max-height: 100%;
   }
 }
 
@@ -2170,6 +2282,10 @@ template {
   .footer__item--mb-2 {
     margin-bottom: 16px;
   }
+  .modal__dialog {
+    width: 430px;
+    padding: 33px 70px 33px 70px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2420,6 +2536,11 @@ template {
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%;
   }
+  .modal__dialog {
+    overflow: auto;
+    position: fixed;
+    max-height: 100%;
+  }
 }
 
 @media (max-width: 567px) {
@@ -2651,6 +2772,37 @@ template {
   .footer__info {
     -ms-flex-preferred-size: 37%;
         flex-basis: 37%;
+  }
+  .modal__dialog {
+    overflow: auto;
+    position: fixed;
+    max-height: 100%;
+    max-width: 320px;
+    padding: 25px 50px 30px 50px;
+  }
+  .modal__form-submit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .modal__info {
+    margin-bottom: 10px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .modal__input {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
@@ -2996,6 +3148,13 @@ template {
   }
   .footer__infopay {
     margin-bottom: 8px;
+  }
+  .modal__dialog {
+    overflow: auto;
+    position: fixed;
+    max-height: 100%;
+    max-width: 270px;
+    padding: 25px 30px 30px 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

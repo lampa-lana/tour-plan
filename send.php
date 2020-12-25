@@ -30,13 +30,13 @@ try {
     //$mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
-    // Настройки вашей почты
+    // Настройки вашей почты  
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'lamparus250@gmail.com'; // Логин на почте
-    $mail->Password   = '15011979'; // Пароль на почте
+    $mail->Username   = 'glo.svetlana.arustamyan@gmail.com'; // Логин на почте
+    $mail->Password   = 'Glo24122020'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('lamparus250@gmail.com', 'Светлана Арустамян'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('glo.svetlana.arustamyan@gmail.com', 'Светлана Арустамян'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('lampa-lana@yandex.ru');  
