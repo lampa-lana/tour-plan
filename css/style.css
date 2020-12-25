@@ -1987,6 +1987,7 @@ template {
     overflow: auto;
     position: fixed;
     max-height: 100%;
+    padding: 30px 70px 30px 70px;
   }
 }
 
@@ -2284,7 +2285,7 @@ template {
   }
   .modal__dialog {
     width: 430px;
-    padding: 33px 70px 33px 70px;
+    padding: 30px 70px 30px 70px;
   }
 }
 
@@ -2778,7 +2779,7 @@ template {
     position: fixed;
     max-height: 100%;
     max-width: 320px;
-    padding: 25px 50px 30px 50px;
+    padding: 25px 50px 28px 50px;
   }
   .modal__form-submit {
     -webkit-box-orient: vertical;
@@ -3154,7 +3155,7 @@ template {
     position: fixed;
     max-height: 100%;
     max-width: 270px;
-    padding: 25px 30px 30px 30px;
+    padding: 25px 30px 28px 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
