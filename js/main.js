@@ -53,10 +53,38 @@ menuButton.on('click', function () {
 
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    $(document).on('keydown', function(e) {
-		if (e.keyCode === 27) {
+  $(document).on('keydown', function (e) {
+    if (e.keyCode === 27) {
       modalOverlay.removeClass("modal__overlay--visible");
-      modalDialog.removeClass ("modal__dialog--visible");              
-		}
-	})
+      modalDialog.removeClass("modal__dialog--visible");
+    }
+  });
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Your name must be at least 2 letters",
+        },
+        email: {
+          required: "We need your email address to contact",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        emailNews: {
+          required: "We need your email address to contact",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "We need your phone to contact",
+          phone: "Your phone  must be in the format of +7 (111) 55-44-33",
+        },
+      },
+    });
+    
+  });
+  $(function(){  
+    $(".input__phone").mask("+7(999) 999-99-99", {
+      } );
+  }); 
 });

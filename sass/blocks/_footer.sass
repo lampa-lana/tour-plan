@@ -132,11 +132,18 @@
     &:hover
       color: $primary
   &__input
-    margin-bottom: 15px
-    &-name
-      flex-basis: 48%
-    &-number
-      flex-basis: 47%
+    width: 100%
+    &-groups
+      width: 100%
+      display: flex
+      align-items: start
+      margin-bottom: 15px
+      justify-content: space-between
+    &-group
+      &-name
+        flex-basis: 48%
+      &-number
+        flex-basis: 47%
   &__textarea
     width: 539px
     height: 123px

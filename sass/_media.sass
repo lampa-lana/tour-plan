@@ -24,7 +24,8 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__info
       flex-basis: 22%
   .modal
@@ -156,10 +157,8 @@
       grid-template-columns: 75px 75px 126px 116px 115px 80px
       grid-row-gap: 43px
     &__input
-      &-name
+      &-group
         flex-basis: 48%
-      &-number
-        flex-basis: 47%
     &__logo
       margin: 0
       width: 98px
@@ -244,6 +243,8 @@
         margin-bottom: 16px
   .modal
     &__dialog
+      overflow-y: auto
+      height: 500px
       width: 430px
       padding: 30px 70px 30px 70px
 @media (max-width: 767px)
@@ -403,7 +404,8 @@
     &-wrapper
       grid-template-columns: minmax(70px, 100px) minmax(30px, 60px) minmax(90px, 120px) minmax(90px, 120px) minmax(70px, 100px) minmax(70px, 100px)
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__logo
       margin: 0
       width: 98px
@@ -423,7 +425,7 @@
       flex-basis: 20%
   .modal
     &__dialog
-      overflow: auto
+      overflow-y: auto
       position: fixed
       max-height: 100%
 @media (max-width: 567px)
@@ -576,24 +578,34 @@
         margin: 0 0 18px 0
     &__info
       flex-basis: 37%
+    &__input
+      &-groups
+        display: flex
+        flex-wrap: wrap
+      &-group-name
+        flex-basis: 100%
+        margin-bottom: 7px
+      &-group-number
+        flex-basis: 100%
   .modal
     &__dialog
       overflow: auto
       position: fixed
       max-height: 100%
       max-width: 320px
-      padding: 25px 50px 28px 50px
+      padding: 10px 50px 20px 50px
     &__form-submit
       flex-direction: column
       align-items: start
     &__button
       order: 2
+      margin-top: 5px
     &__info
-      margin-bottom: 10px
+      margin-bottom: 5px
       order: 1
     &__input
       width: 100%
-      margin-bottom: 10px
+      margin-bottom: 7px
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -842,10 +854,8 @@
       margin-bottom: 8px
   .modal
     &__dialog
-      .modal
-    &__dialog
       overflow: auto
       position: fixed
       max-height: 100%
       max-width: 270px
-      padding: 25px 30px 28px 30px
+      padding: 10px 30px 20px 30px

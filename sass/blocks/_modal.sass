@@ -16,11 +16,12 @@
   &__dialog
     position: fixed
     max-width: 478px
-    height: 487px
+    max-height: 100%
+    overflow: auto
     left: 50%
     top: 49%
     transform: translate(-50%, -50%)
-    padding: 33px 88px 33px 88px
+    padding: 19px 88px 33px 88px
     background-color: $dark
     border-radius: 8px
     color: $light
@@ -41,11 +42,11 @@
     cursor: pointer
   &__input
     width: 100%
-    margin-bottom: 15px
+    margin-top: 15px
   &__textarea
     width: 100%
     min-height: 123px
-    margin-bottom: 15px
+    margin-top: 15px
   &__info
     font-style: normal
     font-weight: bold
@@ -53,7 +54,7 @@
     line-height: 15px
     color: #E0E0E0
   &__title
-    margin: 2px 0 15px 0
+    margin: 17px 0 0 0
     font-style: normal
     font-weight: bold
     font-size: 18px
@@ -62,9 +63,10 @@
     color: $light
     text-align: center
   &__button
+    margin-top: 15px
     min-width: 163px
     padding: 14px 18px 18px 18px
   &__form-submit
     display: flex
-    align-items: center
+    align-items: baseline
     justify-content: space-between

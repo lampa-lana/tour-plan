@@ -58,6 +58,10 @@ body {
   cursor: pointer;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 /** подключение normalize.scss **/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -1089,6 +1093,7 @@ template {
   position: absolute;
   width: 100%;
   height: 100%;
+  padding-top: 5px;
   padding-left: 33px;
   padding-right: 135px;
   font-weight: 300;
@@ -1160,6 +1165,15 @@ template {
   opacity: 1;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+}
+
+.subscribe #emailNews-error {
+  position: absolute;
+  color: #f30909;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 81px 0 24px;
 }
 
 /** стили для блока  отзывов (reviews)**/
@@ -1561,15 +1575,29 @@ template {
 }
 
 .footer__input {
-  margin-bottom: 15px;
+  width: 100%;
 }
 
-.footer__input-name {
+.footer__input-groups {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__input-group-name {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
 }
 
-.footer__input-number {
+.footer__input-group-number {
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
 }
@@ -1866,12 +1894,13 @@ template {
 .modal__dialog {
   position: fixed;
   max-width: 478px;
-  height: 487px;
+  max-height: 100%;
+  overflow: auto;
   left: 50%;
   top: 49%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 33px 88px 33px 88px;
+  padding: 19px 88px 33px 88px;
   background-color: #0A223D;
   border-radius: 8px;
   color: #fff;
@@ -1899,13 +1928,13 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__textarea {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1917,7 +1946,7 @@ template {
 }
 
 .modal__title {
-  margin: 2px 0 15px 0;
+  margin: 17px 0 0 0;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1928,6 +1957,7 @@ template {
 }
 
 .modal__button {
+  margin-top: 15px;
   min-width: 163px;
   padding: 14px 18px 18px 18px;
 }
@@ -1936,9 +1966,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1975,7 +2005,7 @@ template {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2152,13 +2182,9 @@ template {
         grid-template-columns: 75px 75px 126px 116px 115px 80px;
     grid-row-gap: 43px;
   }
-  .footer__input-name {
+  .footer__input-group {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
-  }
-  .footer__input-number {
-    -ms-flex-preferred-size: 47%;
-        flex-basis: 47%;
   }
   .footer__logo {
     margin: 0;
@@ -2284,6 +2310,8 @@ template {
     margin-bottom: 16px;
   }
   .modal__dialog {
+    overflow-y: auto;
+    height: 500px;
     width: 430px;
     padding: 30px 70px 30px 70px;
   }
@@ -2509,7 +2537,7 @@ template {
     -ms-grid-columns: minmax(70px, 100px) minmax(30px, 60px) minmax(90px, 120px) minmax(90px, 120px) minmax(70px, 100px) minmax(70px, 100px);
         grid-template-columns: minmax(70px, 100px) minmax(30px, 60px) minmax(90px, 120px) minmax(90px, 120px) minmax(70px, 100px) minmax(70px, 100px);
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2538,7 +2566,7 @@ template {
         flex-basis: 20%;
   }
   .modal__dialog {
-    overflow: auto;
+    overflow-y: auto;
     position: fixed;
     max-height: 100%;
   }
@@ -2774,12 +2802,28 @@ template {
     -ms-flex-preferred-size: 37%;
         flex-basis: 37%;
   }
+  .footer__input-groups {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__input-group-name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 7px;
+  }
+  .footer__input-group-number {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .modal__dialog {
     overflow: auto;
     position: fixed;
     max-height: 100%;
     max-width: 320px;
-    padding: 25px 50px 28px 50px;
+    padding: 10px 50px 20px 50px;
   }
   .modal__form-submit {
     -webkit-box-orient: vertical;
@@ -2794,16 +2838,17 @@ template {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    margin-top: 5px;
   }
   .modal__info {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
   .modal__input {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 }
 
@@ -3155,7 +3200,7 @@ template {
     position: fixed;
     max-height: 100%;
     max-width: 270px;
-    padding: 25px 30px 28px 30px;
+    padding: 10px 30px 20px 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

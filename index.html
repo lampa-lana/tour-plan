@@ -342,13 +342,14 @@
           target="_blank"
           action="send.php"
           method="POST"
-          class="subscribe newsletter__search"
+          class="subscribe newsletter__search form"
         >
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
-            name="email"
+            name="emailNews"
+            required
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -613,12 +614,7 @@
             <h3 class="card__title card__title-corner">
               The curious corner <br />of chamarel
             </h3>
-            <form
-              target="_blank"
-              action="https://travel.yandex.ru/hotels/miami-beach/the-pavilion-residences/?adults=2&checkinDate=2020-12-21&checkoutDate=2020-12-22&childrenAges="
-            >
-              <button class="card__button">Book Now</button>
-            </form>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card activities__card-golf">
@@ -630,12 +626,7 @@
             <h3 class="card__title card__title-golf">
               Gymkhana club golf course
             </h3>
-            <form
-              target="_blank"
-              action="https://travel.yandex.ru/hotels/miami/icon-residences-by-flashstay/?adults=2&checkinDate=2020-12-21&checkoutDate=2020-12-22&childrenAges="
-            >
-              <button class="card__button">Book Now</button>
-            </form>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card activities__card-trip">
@@ -647,12 +638,7 @@
             <h3 class="card__title card__title-trip">
               Tamarind falls hiking <br />trip - full day
             </h3>
-            <form
-              target="_blank"
-              action="https://travel.yandex.ru/hotels/miami-beach/1-hotel-south-beach/?adults=2&checkinDate=2020-12-21&checkoutDate=2020-12-22&childrenAges="
-            >
-              <button class="card__button">Book Now</button>
-            </form>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card activities__card-quest">
@@ -664,12 +650,7 @@
             <h3 class="card__title card__title-quest">
               The blue marine discovery quest
             </h3>
-            <form
-              target="_blank"
-              action="https://travel.yandex.ru/hotels/miami-beach/suites-at-congress-ocean-drive/?adults=2&checkinDate=2020-12-21&checkoutDate=2020-12-22&childrenAges="
-            >
-              <button class="card__button">Book Now</button>
-            </form>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
         </div>
@@ -866,22 +847,29 @@
               action="send.php"
               target="_blank"
               method="POST"
-              class="footer__form"
+              class="footer__form form"
             >
-              <input
-                type="text"
-                class="input footer__input footer__input-name"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input footer__input-number"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__input-groups">
+                <div class="footer__input-group-name">
+                  <input
+                    type="text"
+                    class="input footer__input footer__input-name footer__input-group-name"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="footer__input-group-number">
+                  <input
+                    type="tel"
+                    class="input footer__input footer__input-number footer__input-group-number input__phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                  />
+                </div>
+              </div>
               <textarea
-                type="text"
                 name="text"
                 class="textarea footer__textarea"
                 placeholder="Message"
@@ -948,28 +936,31 @@
             action="send.php"
             target="_blank"
             method="POST"
-            class="modal__form"
+            class="modal__form form"
           >
             <input
               type="text"
               class="input modal__input modal__input-name"
               placeholder="Your Full Name*"
               name="name"
+              required
+              minlength="2"
             />
             <input
-              type="text"
-              class="input modal__input modal__input-number"
+              type="tel"
+              class="input modal__input modal__input-number input__phone"
               placeholder="Phone Number*"
               name="phone"
+              required
             />
             <input
-              type="text"
+              type="email"
               class="input modal__input modal__input-email"
               placeholder="Email*"
               name="email"
+              required
             />
             <textarea
-              type="text"
               name="text"
               class="textarea modal__textarea"
               placeholder="Message"
@@ -989,6 +980,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
