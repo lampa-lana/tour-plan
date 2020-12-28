@@ -161,16 +161,23 @@
       <!-- /.container -->
     </nav>
     <!-- /.breadcrumb -->
-    <section class="hotel">
+    <section class="thank">
       <div class="container">
-        <div class="hotel-info">
-          <div class="hotel-info__text">
-            <div class="hotel-wrapper">
-              <h1 class="hotel-name hotel-info__name">Message sent!</h1>
+        <div class="thank-info__pageback">
+          <div class="thank-info__pageback-text">
+            <div class="thank-wrapper__pageback">
+              <h1 class="thank-message thank-info__message">Message sent!</h1>
             </div>
-            <p class="hotel-discription hotel-info__discription">
-              We will call you back in 5 minutes.
+            <p class="thank-discription thank-info__discription">
+              We will call you back in 5 minutes
             </p>
+          </div>
+          <div class="thank-back">
+            <a href="index.html" class="thank-back__main">
+              <button class="button thank-back__button" type="submit">
+                go back one step
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -365,20 +372,29 @@
               action="send.php"
               method="POST"
               target="_blank"
-              class="footer__form"
+              class="footer__form form"
             >
-              <input
-                type="text"
-                class="input footer__input footer__input-name"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input footer__input-number"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__input-groups">
+                <div class="footer__input-group-name">
+                  <input
+                    type="text"
+                    class="input footer__input footer__input-name footer__input-group-name"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <div class="footer__input-group-number">
+                  <input
+                    type="tel"
+                    class="input footer__input footer__input-number footer__input-group-number input__phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                  />
+                </div>
+              </div>
               <textarea
                 name="text"
                 class="textarea footer__textarea"
@@ -436,6 +452,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

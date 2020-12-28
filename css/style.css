@@ -1974,6 +1974,84 @@ template {
           justify-content: space-between;
 }
 
+/** стили для блока  thenkyou (страница благодарности )**/
+.thank {
+  padding-bottom: 40px;
+}
+
+.thank-info__pageback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thank-info__pageback-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.thank-info__message {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.thank-info__discription {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.thank-back__button {
+  display: inline-block;
+  padding: 20px 61px 20px 61px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.thank-back__button:after {
+  display: block;
+  content: '';
+  width: 0%;
+  height: 1px;
+  background: #0A223D;
+  ransition: width 0.4s ease-in-out;
+}
+
+.thank-back__button:hover:after, .thank-back__button:focus:after {
+  width: 100%;
+}
+
+.thank-back__button:hover {
+  color: #0A223D;
+}
+
 /** подключение стилей для адаптива**/
 @media (max-width: 1200px) {
   .container {
@@ -2031,6 +2109,12 @@ template {
   }
   .logo .logo__image {
     width: 132px;
+  }
+  .thank-back__button::after, .thank-back__button::before {
+    display: none;
+  }
+  .thank-back__button:hover {
+    color: #fff;
   }
   .navbar-top {
     padding-top: 30px;
