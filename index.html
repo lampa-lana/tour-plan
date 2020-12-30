@@ -6,6 +6,7 @@
     <title>Best Tour Plan-Hotel Booking</title>
     <link rel="stylesheet" href="css/style.css" class="css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" class="css" />
+    <link rel="stylesheet" href="css/aos.css" class="css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
@@ -18,7 +19,13 @@
     <header class="navbar navbar__mobile">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a
+            href="#"
+            class="logo"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -267,7 +274,13 @@
           <!-- /swiper-container -->
 
           <div class="hotel-right">
-            <div class="booking">
+            <div
+              class="booking"
+              data-aos-delay="300"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1500"
+            >
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__start">price starts as</span>
@@ -333,7 +346,7 @@
       data-parallax="scroll"
       data-image-src="img/newsletter-bg.jpg"
     >
-      <div class="newsletter-wrapper">
+      <div class="newsletter-wrapper" data-aos="fade-down" data-aos-delay="200">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
@@ -605,7 +618,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card activities__card-corner">
+          <div
+            class="card activities__card activities__card-corner"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -617,7 +634,11 @@
             <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card-golf">
+          <div
+            class="card activities__card activities__card-golf"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -629,7 +650,11 @@
             <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card-trip">
+          <div
+            class="card activities__card activities__card-trip"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -641,7 +666,11 @@
             <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card-quest">
+          <div
+            class="card activities__card activities__card-quest"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -663,7 +692,12 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer__logo">
-            <a href="#" class="logo"
+            <a
+              href="#"
+              class="logo"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
               ><img
                 src="img/vertical-logo.svg"
                 alt="Logo: Best Tour Plan"
@@ -842,7 +876,13 @@
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-6">Send us a message</h3>
+            <h3
+              class="footer__title footer__title--mb-6"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              Send us a message
+            </h3>
             <form
               action="send.php"
               target="_blank"
@@ -858,6 +898,9 @@
                     name="name"
                     required
                     minlength="2"
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-delay="200"
                   />
                 </div>
                 <div class="footer__input-group-number">
@@ -868,6 +911,9 @@
                     name="phone"
                     required
                     minlength="17"
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-delay="400"
                   />
                 </div>
               </div>
@@ -875,6 +921,9 @@
                 name="text"
                 class="textarea footer__textarea"
                 placeholder="Message"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-delay="600"
               ></textarea>
               <div class="footer__form-submit">
                 <button class="button footer__button" type="submit">
@@ -985,6 +1034,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

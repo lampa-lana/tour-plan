@@ -78,7 +78,7 @@ menuButton.on('click', function () {
         phone: {
           required: "We need your phone to contact",
           phone: "Your phone  must be in the format of +7(999) 999-99-99",
-          minlength: "Your phone  must be in the format of +7(999) 999-99-99",
+          minlength: "Your phone must be at least 10 digits",
         },
       },
     });
@@ -88,5 +88,5 @@ menuButton.on('click', function () {
     $(".input__phone").mask("+7(999) 999-99-99", {
       } );
   }); 
-  
+   AOS.init();
 });

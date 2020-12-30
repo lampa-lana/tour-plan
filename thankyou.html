@@ -6,6 +6,7 @@
     <title>Best Tour Plan-Hotel Booking</title>
     <link rel="stylesheet" href="css/style.css" class="css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" class="css" />
+    <link rel="stylesheet" href="css/aos.css" class="css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
@@ -18,7 +19,13 @@
     <header class="navbar navbar__mobile">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a
+            href="#"
+            class="logo"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -188,7 +195,12 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer__logo">
-            <a href="#" class="logo"
+            <a
+              href="#"
+              class="logo"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
               ><img
                 src="img/vertical-logo.svg"
                 alt="Logo: Best Tour Plan"
@@ -367,7 +379,13 @@
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-6">Send us a message</h3>
+            <h3
+              class="footer__title footer__title--mb-6"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              Send us a message
+            </h3>
             <form
               action="send.php"
               method="POST"
@@ -383,6 +401,9 @@
                     name="name"
                     required
                     minlength="2"
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-delay="600"
                   />
                 </div>
                 <div class="footer__input-group-number">
@@ -393,6 +414,9 @@
                     name="phone"
                     required
                     minlength="17"
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-delay="400"
                   />
                 </div>
               </div>
@@ -400,6 +424,9 @@
                 name="text"
                 class="textarea footer__textarea"
                 placeholder="Message"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-delay="200"
               ></textarea>
               <div class="footer__form-submit">
                 <button class="button footer__button" type="submit">
@@ -455,6 +482,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
