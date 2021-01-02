@@ -90,3 +90,6 @@ menuButton.on('click', function () {
   }); 
    AOS.init();
 });
+lazyframe('.lazyframe');  
+
+
