@@ -40,7 +40,8 @@ menuButton.on('click', function () {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
-    modalDialog.addClass ("modal__dialog--visible");
+    modalDialog.addClass("modal__dialog--visible");
+  
   }
 
   function closeModal(event) {
@@ -48,7 +49,8 @@ menuButton.on('click', function () {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
-    modalDialog.removeClass ("modal__dialog--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+   
   }
 
     var modalOverlay = $(".modal__overlay");
@@ -57,6 +59,7 @@ menuButton.on('click', function () {
     if (e.keyCode === 27) {
       modalOverlay.removeClass("modal__overlay--visible");
       modalDialog.removeClass("modal__dialog--visible");
+     
     }
   });
   $(".form").each(function () {

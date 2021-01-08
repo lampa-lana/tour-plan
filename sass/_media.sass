@@ -112,6 +112,12 @@
     &__button
       &::after, &::before
         display: none
+    &__num
+      transition: none
+      &::after, &::before
+        display: none
+      &:hover
+        color: $light
   .lazyframe
     width: 340px
     margin-left: 0
@@ -161,6 +167,13 @@
         display: none
   .footer
     padding-top: 72px
+    svg path
+      fill: #BDBDBD
+      stroke: inherit
+      stroke-width: inherit
+      &__icon-facebook
+      &:hover
+        fill: #BDBDBD
     &-wrapper
       grid-template-columns: 75px 75px 126px 116px 115px 80px
       grid-row-gap: 43px
@@ -359,7 +372,6 @@
   .swiper
     &-container
       max-width: 650px
-      height: 100%
   .hotel
     &-right
       flex-direction: column
@@ -595,6 +607,8 @@
         margin-bottom: 7px
       &-group-number
         flex-basis: 100%
+    &__infopay
+      margin-bottom: 10px
   .modal
     &__dialog
       overflow: auto

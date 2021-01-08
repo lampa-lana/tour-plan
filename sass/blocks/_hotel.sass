@@ -169,6 +169,15 @@
     line-height: 25px
   &__num
     margin-left: 8px
+    display: inline-block
+    text-decoration: none
+    color: inherit
+    transition: all 0.6s
+    &:after
+      display: block
+      content: ''
+    &:hover
+      color: $primary
   &__button
     position: relative
     width: 100%
