@@ -167,6 +167,18 @@
         display: none
   .footer
     padding-top: 72px
+    &__icon
+      &-map
+        margin-left: 10px
+        margin-top: 2px
+      &-call
+        margin-left: 7px
+        margin-top: 4px
+      &-email
+        margin-left: 7px
+        margin-top: 4px
+      &-wrapper
+        min-width: 45px
     svg path
       fill: #BDBDBD
       stroke: inherit
@@ -243,7 +255,7 @@
     &__title
       font-size: 18px
       &--inline
-        margin: 5px 40px 0 -1px
+        margin: 7px 43px 0 -3px
       &--mb-3
         margin: 17px 0 26px 0
       &--mb-6
@@ -261,7 +273,7 @@
         color: #FFFFFF
     &__item
       &--mb-2
-        margin-bottom: 16px
+        margin-bottom: 14px
   .modal
     &__dialog
       overflow-y: auto
@@ -538,8 +550,10 @@
     width: 100%
   .reviews
     &-slider
-      max-width: 281px
-      min-height: 485px
+      max-width: 450px
+      min-height: 400px
+      &__item
+        padding: 0 30px 0 30px
       &__text
         height: 300px
         overflow-y: scroll
@@ -628,6 +642,20 @@
     &__input
       width: 100%
       margin-bottom: 7px
+@media (max-width: 370px)
+  .reviews
+    &-slider
+      max-width: 281px
+      min-height: 485px
+      &__item
+        padding: 0 30px 30px 30px
+      &__text
+        height: 300px
+        overflow-y: scroll
+        font-weight: normal
+        font-size: 12px
+        line-height: 160%
+        text-align: justify
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -807,6 +835,16 @@
         margin-right: 10px
   .footer
     padding-top: 69px
+    &__icon
+      &-map
+        margin-left: 6px
+        margin-top: 3px
+      &-call
+        margin-left: 2px
+        margin-top: 4px
+      &-email
+        margin-left: 2px
+        margin-top: 4px
     &-wrapper
       grid-row-gap: 29px
     &__logo
@@ -854,7 +892,7 @@
         margin-bottom: 23px
     &__ul
       &--mini
-        margin-bottom: 30px
+        margin-bottom: 27px
     &__form-submit
       margin-bottom: 1px
       display: flex

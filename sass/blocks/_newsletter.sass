@@ -35,7 +35,6 @@
   width: 350px
   height: 55px
   border-radius: 4px
-  overflow: hidden
   &__input
     position: absolute
     width: 100%
@@ -46,9 +45,11 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
-    border: none
+    border-radius: 4px
     outline: none
+    border: none
   &__button
+    border-radius: 0 4px 4px 0
     position: absolute
     display: inline-block
     right: 0
@@ -83,23 +84,24 @@
     &::after
       content: ''
       position: absolute
-      top: 0
+      top: -3px
       left: -3px
       width: 100%
       height: 100%
       z-index: 1
       opacity: 0
       transition: all 0.5s
-      border-radius: 2px
-      border: 5px solid #EC1F46
-      transform: scale(1.2,1.2)
+      border-radius: 4px
+      border: 3px solid #EC1F46
+      transform: scale(1.1,1.1)
     &:hover::after
       opacity: 1
       transform: scale(1,1)
   #emailNews-error
     position: absolute
     color: #f30909
-    font-size: 12px
+    font-size: 14px
     font-weight: bold
     text-align: center
     padding: 0px 81px 0 24px
+    top: 60px
