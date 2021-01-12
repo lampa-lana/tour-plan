@@ -34,8 +34,7 @@ $(document).ready(function () {
  */
    var menuButton = $(".menu-button");
   menuButton.on('click', function () {
-    console.log(' Клик по кнопке меню');
-    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+        $(".navbar-bottom").toggleClass("navbar-bottom--visible");
     $("body").toggleClass("no-scroll");
    
   });
